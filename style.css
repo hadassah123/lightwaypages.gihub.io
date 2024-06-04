@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    font-family: "Quicksand", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.underline{
+    height: 3px;
+    width: 100px;
+    background-color: blue;
+}
+
+.btn:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.btn-primary{
+    background-color: #000000!important;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: blue!important;
+}
+
+.product-item{
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    position: relative;
+}
+.product-item .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(62, 124, 240, 0.3);
+    color: var(--body-clr);
+    padding: 15px;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.product-item:hover .overlay{
+    opacity: 1;
+}
+
+.product-item .overlay a{
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #fff;
+    color: var(--body-clr);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.product-item .overlay a:hover{
+    background-color: var(--body-clr);
+    color: var(--primary-clr);
+}
+
+.footer { 
+    background-color: #000; 
+} 
+
+.footer-content h2 { 
+    color: #fff; 
+} 
+
+.footer-content h5, 
+.footer-content p, 
+.footer-links a { 
+    color: #fff; 
+} 
+
+.footer-links a:hover { 
+    text-decoration: underline; 
+} 
+
+.footer hr { 
+    background-color: #fff; 
+} 
